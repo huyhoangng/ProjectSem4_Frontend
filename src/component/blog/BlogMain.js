@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BlogMain = () => {
   return (
@@ -19,7 +20,9 @@ const BlogMain = () => {
                       <h6 className="text-light text-uppercase mb-0">January</h6>
                       <span>2045</span>
                     </div>
-                    <a className="h5 text-uppercase text-light" href="/detail">Sed amet tempor amet sit kasd sea lorem</a>
+                    <Link className="h5 text-uppercase text-light" to={`/detail/${item}`}>
+                      Sed amet tempor amet sit kasd sea lorem
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -28,19 +31,19 @@ const BlogMain = () => {
               <nav aria-label="Page navigation">
                 <ul className="pagination pagination-lg justify-content-center m-0">
                   <li className="page-item disabled">
-                    <a className="page-link" href="#" aria-label="Previous">
+                    <Link className="page-link" to="#" aria-label="Previous">
                       <span aria-hidden="true"><i className="bi bi-arrow-left"></i></span>
-                    </a>
+                    </Link>
                   </li>
                   {[1, 2, 3].map((page) => (
                     <li className={`page-item ${page === 1 ? 'active' : ''}`} key={page}>
-                      <a className="page-link" href="/detail">{page}</a>
+                      <Link className="page-link" to="/detail">{page}</Link>
                     </li>
                   ))}
                   <li className="page-item">
-                    <a className="page-link" href="#" aria-label="Next">
+                    <Link className="page-link" to="#" aria-label="Next">
                       <span aria-hidden="true"><i className="bi bi-arrow-right"></i></span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -65,14 +68,14 @@ const BlogMain = () => {
             <h3 className="text-uppercase mb-4">Categories</h3>
             <div className="d-flex flex-column justify-content-start bg-dark rounded p-4">
               {["Web Design", "Web Development", "Keyword Research", "Email Marketing"].map((category, index) => (
-                <a
+                <Link
                   className="fs-5 fw-bold text-light text-uppercase mb-2"
-                  href="#"
+                  to="#"
                   key={index}
                 >
                   <i className="bi bi-arrow-right text-primary me-2"></i>
                   {category}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -90,12 +93,12 @@ const BlogMain = () => {
                     style={{ width: '75px' }}
                     alt=""
                   />
-                  <a
-                    href="/detail"
+                  <Link
+                    to="/detail"
                     className="d-flex align-items-center bg-light rounded-end h5 text-uppercase p-3 mb-0"
                   >
                     Sed amet tempor amet sit kasd sea lorem
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -107,7 +110,7 @@ const BlogMain = () => {
             <h3 className="text-uppercase mb-4">Tag Cloud</h3>
             <div className="d-flex flex-wrap m-n1">
               {["Design", "Development", "Marketing", "SEO", "Writing", "Consulting"].map((tag, index) => (
-                <a href="" className="btn btn-dark m-1" key={index}>{tag}</a>
+                <Link to="" className="btn btn-dark m-1" key={index}>{tag}</Link>
               ))}
             </div>
           </div>
@@ -122,7 +125,7 @@ const BlogMain = () => {
                 amet sit dolor clita kasd justo, diam accusam no sea ut tempor magna
                 takimata, amet sit et diam dolor ipsum amet diam
               </p>
-              <a href="" className="btn btn-primary py-2 px-4">Read More</a>
+              <Link to="" className="btn btn-primary py-2 px-4">Read More</Link>
             </div>
           </div>
           {/* Plain Text End */}
