@@ -84,16 +84,14 @@ const Header = () => {
                 {/* <a href="/detail" className="nav-item nav-link">
                    Blog Detail
                 </a> */}
-                <a href="/testimonial" className="nav-item nav-link">
-                  Testimonial
+                <a href="/rank" className="nav-item nav-link">
+                  Your Rank
                 </a>
-                
-            
                 <a href="/contact" className="nav-item nav-link">
-                  Contact
+                  Shop
                 </a>
               </div>
-              <a href="#" className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">
+              <a href="/login" className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">
                 Join Us
               </a>
             </div>
