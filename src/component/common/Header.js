@@ -87,8 +87,8 @@ const Header = () => {
                 <a href="/rank" className="nav-item nav-link">
                   Your Rank
                 </a>
-                <a href="/contact" className="nav-item nav-link">
-                  Shop
+                <a href="/subscription" className="nav-item nav-link">
+                  Subscription
                 </a>
               </div>
               <a href="/login" className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">

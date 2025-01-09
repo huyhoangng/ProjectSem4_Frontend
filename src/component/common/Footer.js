@@ -58,7 +58,7 @@ const Footer = () => {
                   <a className="text-secondary mb-2" href="#">
                     <i className="bi bi-arrow-right text-primary me-2"></i>Latest Blog
                   </a>
-                  <a className="text-secondary" href="#">
+                  <a className="text-secondary" href="/contact">
                     <i className="bi bi-arrow-right text-primary me-2"></i>Contact Us
                   </a>
                 </div>
@@ -83,7 +83,7 @@ const Footer = () => {
                   <a className="text-secondary mb-2" href="#">
                     <i className="bi bi-arrow-right text-primary me-2"></i>Latest Blog
                   </a>
-                  <a className="text-secondary" href="#">
+                  <a className="text-secondary" href="/contact">
                     <i className="bi bi-arrow-right text-primary me-2"></i>Contact Us
                   </a>
                 </div>

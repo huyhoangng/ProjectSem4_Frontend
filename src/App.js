@@ -12,6 +12,7 @@ import Detail from './page/Detail';
 import Login from './page/Login'; 
 import Rank from './page/Rank';
 import Signup from './page/Signup'; 
+import Subscription from './page/Subscription';
 
 const AppLayout = ({ children }) => {
   const location = useLocation();
@@ -43,8 +44,10 @@ const App = () => {
           <Route path="/contact" element={<Contacts />} />
           <Route path="/rank" element={<Rank />} />
           <Route path="/detail/:id" element={<Detail />} />
+          <Route path="/subscription" element={<Subscription/>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} /> {/* Đảm bảo có route đăng ký */}
+          
         </Routes>
       </AppLayout>
     </Router>
